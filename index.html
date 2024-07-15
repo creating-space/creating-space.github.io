@@ -1,14 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creating Space Wiki</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/> 
+<html><head><base href="https://creatingspace.mod"><title>Creating Space - Space Exploration Mod for Create</title>
+<style>
+  body {
+    font-family: 'Space Mono', monospace;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a1a;
+    background-image: 
+      radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+      radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+      radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #4fc3f7;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 20px rgba(79, 195, 247, 0.5);
+  }
+  h1 {
+    margin-bottom: 0;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #4fc3f7;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    color: #81d4fa;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+  }
+  nav a:hover {
+    background-color: #4fc3f7;
+    color: #0a0a1a;
+    border-radius: 3px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .main-content {
+    flex: 2;
+    min-width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(79, 195, 247, 0.3);
+    margin-right: 20px;
+  }
+  .sidebar {
+    flex: 1;
+    min-width: 250px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(79, 195, 247, 0.3);
+  }
+  h2, h3 {
+    color: #4fc3f7;
+    border-bottom: 2px solid #4fc3f7;
+    padding-bottom: 5px;
+  }
+  .feature-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .feature-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  .feature-list li::before {
+    content: "🚀";
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #4fc3f7;
+    color: #0a0a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #81d4fa;
+    box-shadow: 0 0 10px #4fc3f7;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0 0;
+    font-size: 0.9em;
+    color: #b3e5fc;
+  }
+  a {
+    color: #4fc3f7;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
-    <p class="centered">Test</p>
+  <header>
+    <h1>Creating Space</h1>
+    <p>Expand Your Minecraft Universe</p>
+  </header>
+  
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="https://creatingspace.mod/download">Download</a>
+    <a href="https://creatingspace.mod/wiki">Wiki</a>
+    <a href="https://creatingspace.mod/forum">Community</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <div class="container">
+    <div class="content">
+      <div class="main-content">
+        <section id="about">
+          <h2>About Creating Space</h2>
+          <p>Creating Space is a groundbreaking Minecraft mod that seamlessly integrates with the Create mod, introducing exhilarating elements of space exploration, advanced rocketry, and interplanetary colonization to your Minecraft experience. Embark on a cosmic journey and engineer your path through the stars!</p>
+        </section>
+        
+        <section id="features">
+          <h2>Key Features</h2>
+          <ul class="feature-list">
+            <li>Design and launch custom rockets using Create's mechanical components</li>
+            <li>Explore procedurally generated planets, moons, and asteroids</li>
+            <li>Establish and manage orbital space stations and planetary colonies</li>
+            <li>Research cutting-edge space technologies and uncover cosmic mysteries</li>
+            <li>Navigate realistic orbital mechanics and manage life support systems</li>
+            <li>Encounter fascinating space phenomena like nebulae, black holes, and wormholes</li>
+          </ul>
+        </section>
+        
+        <a href="https://creatingspace.mod/download" class="cta-button">Download Now</a>
+      </div>
+      
+      <div class="sidebar">
+        <h3>Latest News</h3>
+        <ul>
+          <li><a href="#">Creating Space v2.0.1 Released!</a></li>
+          <li><a href="#">Community Showcase: Dyson Sphere Project</a></li>
+          <li><a href="#">Mod Spotlight: Creating Space x Botania Integration</a></li>
+        </ul>
+        
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="https://creatingspace.mod/getting-started">Getting Started Guide</a></li>
+          <li><a href="https://creatingspace.mod/compatibility">Mod Compatibility List</a></li>
+          <li><a href="https://creatingspace.mod/gallery">Screenshot Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Creating Space v2.0.1 | Compatible with Create v0.5.1 | &copy; 2023 Stellar Modding Team</p>
+    <p><a href="https://creatingspace.mod/privacy">Privacy Policy</a> | <a href="https://creatingspace.mod/terms">Terms of Use</a></p>
+  </footer>
 </body>
 </html>
-
-<!--test-->
