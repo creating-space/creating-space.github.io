@@ -1,3 +1,2 @@
-# Creating Space Wiki
-The official Creating Space minecraft mod Wiki!
-In order to view the link, just paste the name of the repository into your search bar.
+# Northstar DEMO Wiki
+this is a fanmade wiki which i hope will become the official wiki one day
